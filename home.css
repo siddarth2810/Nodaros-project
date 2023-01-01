@@ -1,7 +1,87 @@
+
+
 body{
-    background-image: url('/Firstbackground.png');
+    /* background-image: url('/Firstbackground.png'); */
+    background-color: #D4C19A;
+    
+    margin: 0;
 }
 a { color: inherit; } 
+
+#theme{
+/* margin-top: 0; */
+background-image: url('/Firstbackground.png');
+background-size: 1400px;
+background-attachment: fixed;
+height: 600px;
+position: relative;
+margin-bottom: 0;
+
+}
+
+#Mage {
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.684);
+  font-family: Poppins;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  padding-left: 150px;
+  line-height: 50px;
+}
+
+
+
+#Knight {
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.684);
+  font-family: Poppins;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  padding-left: 150px;
+  line-height: 50px;
+}
+
+#Support {
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.684);
+  font-family: Poppins;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  padding-left: 150px;
+  line-height: 50px;
+}
+
+#Scout {
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.684);
+  font-family: Poppins;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  padding-left: 150px;
+  line-height: 50px;
+}
+
+
+p{
+  background-color: rgba(0, 0, 0, 0.684);
+font-family: Poppins;
+color: white;
+font-family: 'Poppins', sans-serif;
+font-size: 2.1rem;
+text-align: center;
+padding:50px;
+padding-bottom: 0;
+margin-top: 0;
+margin-bottom: 0;
+font-weight: bold;
+line-height: 50px;
+}
+
+
 
 h1{
     letter-spacing: 2px;
@@ -12,6 +92,8 @@ h1{
     text-shadow: 0 1px 3px #000;
     text-align: center;
   }
+
+
   
   .img-logo{
     width: 150px;
@@ -21,6 +103,7 @@ h1{
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+
   }
   
   @keyframes logo-move {
@@ -37,7 +120,7 @@ h1{
     color: #ffc000;
     font-size: 18px;
     font-weight: 400;
-    text-shadow: 0 1px 3px #000;
+    /* text-shadow: 0 1px 3px #000; */
     text-align: center;
     padding: 10px 0;
     background: radial-gradient(circle, #8b0000, #8b0000);
@@ -57,3 +140,5 @@ h1{
     background: radial-gradient(circle, #ec6a6a, #e52b2b);
     box-shadow: 0px 0 5px 5px rgba(255,255,255,0.2)
   }
+
+  
