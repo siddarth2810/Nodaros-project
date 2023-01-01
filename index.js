@@ -1,10 +1,4 @@
-let index=0;
-var quests= ['Quest 1', 'Quest 2 ','Quest 3']
-function newQuote() {
-document.getElementById("last").innerHTML=quests[index];
-index = index >= quests.length - 1 ? 0 : index + 1;
 
-}
 
 
 
@@ -44,25 +38,15 @@ $(function() {
   
   
     // Add sub level
-    $(".js-treeview").on("click", "#knightclass"
-    , function() {
-      treeview.addSubLevel($(this));
-      // treeview.resetBtnToggle();
 
-      document.getElementById("last").innerHTML=quests[index];
-      index = index >= quests.length - 1 ? 0 : index + 1;
-      
-     
-    
-    });
 
    
     
-    $(".js-treeview").on("click", "#healerclass"
+   $(".js-treeview").on("click", "#class"
     , function() {
       treeview.addSubLevel($(this));
       treeview.resetBtnToggle();
-      alert("you started healer quest")
+     
     });
       
   

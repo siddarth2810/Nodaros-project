@@ -1,5 +1,42 @@
-ody {
-  margin-bottom: 6em;
+body {
+  background: url('realbackground.png');
+  background-size: 1550px;
+  background-attachment: fixed;
+  
+}
+
+
+
+
+/* .treeview:hover{
+  background: radial-gradient(circle, #e52b2b, #8b0000);
+  box-shadow: 0px 0 5px 5px rgba(255,255,255,0.2)
+} */
+
+
+
+
+.treeview__level  {
+  
+  letter-spacing: 2px;
+  border-radius: 8px;
+  font-family: 'Skranji', cursive;
+  color: #ffc000;
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: 0 1px 3px #000;
+  text-align: center;
+  
+  background: radial-gradient(circle, #8b0000, #8b0000);
+  border-top: 4px ridge #ffb000;
+  border-left: 4px groove #ffb000;
+  border-right: 4px ridge #ffb000;
+  border-bottom: 4px groove #ffb000;
+ 
+}
+
+#okay{
+  background-image: url('/knight.jpg');
 }
 
 .treeview .btn-default {
@@ -7,7 +44,7 @@ ody {
 }
 .treeview .btn-default:hover {
   background-color: #f7faea;
-  color: #bada55;
+  color: #ffb000;
 }
 .treeview ul {
   list-style: none;
@@ -22,14 +59,14 @@ ody {
   position: absolute;
   top: -26px;
   left: -31px;
-  border-left: 2px dashed #a2a5b5;
+  border-left: 6px ridge #ffb000;
   width: 1px;
   height: 100%;
 }
 .treeview ul li:after {
   content: "";
   position: absolute;
-  border-top: 2px dashed #a2a5b5;
+  border-top: 6px ridge #ffb000;
   top: 70px;
   left: -30px;
   width: 65px;
@@ -49,11 +86,16 @@ ody {
   content: unset;
 }
 .treeview > ul > li > .treeview__level:before {
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   top: -9.5px;
-  background-color: #54a6d9;
-  border: 7.5px solid #d5e9f6;
+  background-image: url(/path1.png);
+  background-size: 65px;
+  border-top: 4px ridge #ffb000;
+  border-left: 4px groove #ffb000;
+  border-right: 4px ridge #ffb000;
+  border-bottom: 4px groove #ffb000;
+
   font-size: 22px;
 }
 .treeview > ul > li > ul {
@@ -61,28 +103,24 @@ ody {
 }
 .treeview__level {
   padding: 7px;
-  padding-left: 42.5px;
+  
   display: inline-block;
   border-radius: 5px;
-  font-weight: 700;
-  border: 1px solid #e3e5ef;
+ 
+  border: 3px ridge #ffb000;
   position: relative;
   z-index: 1;
 }
 .treeview__level:before {
-  content: attr(data-level);
+ 
   position: absolute;
-  left: -27.5px;
+ 
   top: -6.5px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
-  border: 7.5px solid #eef6d5;
-  background-color: #bada55;
-  color: #fff;
+  align-items: left;
+  justify-content: left;
+ 
+  color: #ffb000;
   font-size: 20px;
 }
 .treeview__level-btns {
@@ -99,7 +137,7 @@ ody {
   display: block;
 }
 .treeview__level .level-same.in .btn-default, .treeview__level .level-sub.in .btn-default {
-  background-color: #faeaea;
+  background-color: black;
   color: #da5555;
 }
 .treeview__level .level-same {
@@ -114,7 +152,7 @@ ody {
   display: none;
 }
 .treeview__level.selected {
-  background-color: #f9f9fb;
+  background-color: #ffb000;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .treeview__level.selected .level-remove {
