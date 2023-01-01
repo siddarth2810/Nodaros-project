@@ -1,19 +1,84 @@
-<html>
-  <head>
-    <!-- <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-graph.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-data-adapter.min.js"></script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="treeview js-treeview">
+        <ul>
+          <li>
+            <div class="treeview__level" data-level="A">
+              <span class="level-title">Choose the path</span>
+              
+            </div>
+            <ul>
+      
+              
+      
+              <li>
+                <div class="treeview__level" data-level="B">
+                  <span class="level-title">KNIGHT</span>
+                  <div class="treeview__level-btns">
+                    <div class="btn btn-default btn-sm level-add"><span class="fa fa-plus" ></span></div>
+                    <div class="btn btn-default btn-sm level-remove"><span class="fa fa-trash text-danger"></span></div>
+                    <!-- <div class="btn btn-default btn-sm level-same"><span>Add Same Level</span></div> -->
+                    <div class="btn btn-default btn-sm level-sub" ><span id="knightclass" onclick="newQuote()">START A QUEST of knight</span></div>
+                  </div>
+                </div>
+                <ul>
+                </ul>
+                
+              </li>
 
+              <li>
+                <div class="treeview__level" data-level="B">
+                  <span class="level-title">HEALER</span>
+                  <div class="treeview__level-btns">
+                    <div class="btn btn-default btn-sm level-add"><span class="fa fa-plus"></span></div>
+                    <div class="btn btn-default btn-sm level-remove"><span class="fa fa-trash text-danger"></span></div>
+                    
+                    <div class="btn btn-default btn-sm level-sub"><span id="healerclass">START A QUEST</span></div>
+                  </div>
+                </div>
+                <ul>
+                </ul>
+              </li>
 
-	<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
-<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-graph.min.js"></script>
-    <style type="text/css">
-
-    </style>
-	<link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div id="container"></div>
-  </body>
-  <script src="index.js"></script>
+             
+            </ul>
+          </li>
+        </ul>
+      </div>
+      </div>
+      
+      <template id="levelMarkup">
+          <li>
+            <div class="treeview__level" data-level="A">
+              <span class="level-title" id="countdown" >YOUR QUEST IS <br>
+             
+              </span>
+              <div class="treeview__level-btns">
+                <div class="btn btn-default btn-sm level-add"><span class="fa fa-plus"></span></div>
+                <!-- <div class="btn btn-default btn-sm level-remove"><span class="fa fa-trash text-danger"></span></div> -->
+              <div id="last">
+                <!-- willl this actually work -->
+              </div>
+                <!-- <div class="btn btn-default btn-sm level-same"><span>Add Same Level</span></div> -->
+                <!-- <div class="btn btn-default btn-sm level-sub"><span>Add Sub Level</span></div> -->
+              </div>
+            </div>
+            <ul>
+            </ul>
+      </li>
+      
+      </template>
+</body>
+<script src="index.js"></script>
 </html>
