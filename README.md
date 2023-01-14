@@ -1,5 +1,5 @@
 # Nodaros-project
-This project is based on an attempt to gamify the process of uphodling your new year resolutions. So basically we have given a game class for each type of activiy for example Knight class for your fitness goals etc.
+This project is based on an attempt to gamify the process of uphodling your new year resolutions. So basically we have given a game class for each type of activiy, for example Knight class for your fitness goals etc.
 # What does it contain
 We wanted to create a interactive chart for where user can input their task and the nodes of the chart diverges as the inputs are more and more
 # What next
